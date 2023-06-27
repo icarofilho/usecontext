@@ -4,7 +4,7 @@ import { createContext, useState } from "react";
 export const FormContext = createContext();
 
 function FormProvider({ children }) {
-  const [data, setData] = useState({ user: "icaro" });
+  const [data, setData] = useState({ user: "" });
 
   return (
     <FormContext.Provider value={{ data, setData }}>

@@ -2,8 +2,8 @@ import { useContext, useRef } from "react";
 import { FormContext } from "../../context/FormContext";
 
 function FormComponent() {
-  const { data, setData } = useContext(FormContext);
-  const dataRef = useRef(data);
+  const { setData } = useContext(FormContext);
+  const dataRef = useRef();
 
   const handleInput = (event) => {
     event.preventDefault();
